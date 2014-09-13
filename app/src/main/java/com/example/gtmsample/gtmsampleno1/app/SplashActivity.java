@@ -32,7 +32,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SplashActivity extends Activity {
     private static final long TIMEOUT_FOR_CONTAINER_OPEN_MILLISECONDS = 2000;
-    private static final String CONTAINER_ID = "GTM-KZ4PVQ";
+    private static final String CONTAINER_ID = "GTM-KMZHPV";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,7 @@ public class SplashActivity extends Activity {
 
         PendingResult<ContainerHolder> pendingResult
                 = tagManager.loadContainerPreferNonDefault(CONTAINER_ID,
-                R.raw.default_container_binary);
+                R.raw.default_binary_container);
 
         pendingResult.setResultCallback(new ResultCallback<ContainerHolder>() {
             @Override

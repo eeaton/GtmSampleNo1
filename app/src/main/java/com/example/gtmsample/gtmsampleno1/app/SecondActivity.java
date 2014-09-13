@@ -24,26 +24,25 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class MainActivity extends Activity {
-    public MainActivity(){
-    }
+public class SecondActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        GtmUtil.pushOpenScreenEvent(this, "MainActivity");
+        GtmUtil.pushOpenScreenEvent(this, "ニュースTOP");
+        GtmUtil.pushCustomEvent(this, "test","view screen", "日本語のラベル", (long) 100);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.second, menu);
         return true;
     }
 
@@ -56,8 +55,8 @@ public class MainActivity extends Activity {
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
 
-    public void callSecondActivity(View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
+    public void callMainActivity(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

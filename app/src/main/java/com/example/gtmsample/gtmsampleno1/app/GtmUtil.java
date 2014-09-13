@@ -21,12 +21,7 @@ import android.content.Context;
 import com.google.android.gms.tagmanager.DataLayer;
 import com.google.android.gms.tagmanager.TagManager;
 
-import java.util.HashMap;
 
-
-/**
- * Created by yukoga on 9/3/14.
- */
 public class GtmUtil {
     // constructor
     private GtmUtil() {}
@@ -37,9 +32,14 @@ public class GtmUtil {
         dataLayer.pushEvent("openScreen", DataLayer.mapOf("screenName", screenName));
     }
 
-    // push a closeScreen event.
-    public static void pushCloseScreenEvent(Context context, String screenName) {
+    // push custom event.
+    public static void pushCustomEvent(Context context, String eventCategory, String eventAction, String eventLabel, Long eventValue) {
         DataLayer dataLayer = TagManager.getInstance(context).getDataLayer();
-        dataLayer.pushEvent("closeScreen", DataLayer.mapOf("screenName", screenName));
+        dataLayer.push(DataLayer.mapOf("eventCategory", eventCategory, "eventAction", eventAction, "eventLabel", eventLabel, "eventValue", eventValue));
     }
+    // push a closeScreen event.
+//    public static void pushCloseScreenEvent(Context context, String screenName) {
+//        DataLayer dataLayer = TagManager.getInstance(context).getDataLayer();
+//        dataLayer.pushEvent("closeScreen", DataLayer.mapOf("screenName", screenName));
+//    }
 }
