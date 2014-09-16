@@ -23,12 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.gtmsample.gtmsampleno1.app.MainActivity" >
-        </activity>
-        <activity
-            android:name="com.example.gtmsample.gtmsampleno1.app.SecondActivity"
-            android:label="@string/title_activity_second" >
-        </activity>
     </application>
 
 </manifest>
