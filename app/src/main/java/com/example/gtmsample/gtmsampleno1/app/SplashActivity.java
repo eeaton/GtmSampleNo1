@@ -44,6 +44,7 @@ public class SplashActivity extends Activity {
 
         PendingResult<ContainerHolder> pendingResult
                 = tagManager.loadContainerPreferNonDefault(CONTAINER_ID,
+//                = tagManager.loadContainerPreferFresh(CONTAINER_ID,
                 R.raw.default_binary_container);
 
         pendingResult.setResultCallback(new ResultCallback<ContainerHolder>() {
@@ -51,6 +52,7 @@ public class SplashActivity extends Activity {
             public void onResult(ContainerHolder containerHolder) {
                 ContainerHolderSingleton.setContainerHolder(containerHolder);
                 Container container = containerHolder.getContainer();
+                    Log.v("GtmSampleNo1", "Last container refresh time is " + container.getLastRefreshTime());
                 if (!containerHolder.getStatus().isSuccess()) {
                     Log.e("GtmSampleNo1", "fail to load container.");
                     return;

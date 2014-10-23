@@ -25,18 +25,22 @@ import com.google.android.gms.tagmanager.TagManager;
 public class GtmUtil {
     // constructor
     private GtmUtil() {}
-
     // push openScreen event.
     public static void pushOpenScreenEvent(Context context, String screenName) {
-        DataLayer dataLayer = TagManager.getInstance(context).getDataLayer();
+        TagManager tagManager = TagManager.getInstance(context);
+        DataLayer dataLayer = tagManager.getDataLayer();
         dataLayer.pushEvent("openScreen", DataLayer.mapOf("screenName", screenName));
     }
 
     // push custom event.
     public static void pushCustomEvent(Context context, String eventCategory, String eventAction, String eventLabel, Long eventValue) {
-        DataLayer dataLayer = TagManager.getInstance(context).getDataLayer();
+        TagManager tagManager = TagManager.getInstance(context);
+        DataLayer dataLayer = tagManager.getDataLayer();
         dataLayer.push(DataLayer.mapOf("eventCategory", eventCategory, "eventAction", eventAction, "eventLabel", eventLabel, "eventValue", eventValue));
+        tagManager.dispatch();
+
     }
+
     // push a closeScreen event.
 //    public static void pushCloseScreenEvent(Context context, String screenName) {
 //        DataLayer dataLayer = TagManager.getInstance(context).getDataLayer();
