@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/ellioteaton/Documents/GtmSampleNo1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="/Users/ellioteaton/Documents/GtmSampleNo1/app/build/intermediates/pre-dexed/debug/classes-f6b57120c1406105e7293dce8aa3556af39c1d5e.jar" />
+    </item>
+    <item
+        jar="/Users/ellioteaton/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/ellioteaton/Documents/GtmSampleNo1/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-75f0eb065a11866e7f91e3e6397e6ec77e54ea90.jar" />
+    </item>
+    <item
+        jar="/Users/ellioteaton/Documents/GtmSampleNo1/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/ellioteaton/Documents/GtmSampleNo1/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-14081186cfb7c0a128b4ab227563bec5605d0f96.jar" />
+    </item>
+    <item
+        jar="/Users/ellioteaton/Documents/GtmSampleNo1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/ellioteaton/Documents/GtmSampleNo1/app/build/intermediates/pre-dexed/debug/classes-edfe0a1ae147fc1b0bdfa2d6a86787294d5f2890.jar" />
+    </item>
+    <item
+        jar="/Users/ellioteaton/Documents/GtmSampleNo1/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/ellioteaton/Documents/GtmSampleNo1/app/build/intermediates/pre-dexed/debug/classes-fcc91d01a0f68c626868e4364d9c4a5075cf80d8.jar" />
+    </item>
+
+</items>

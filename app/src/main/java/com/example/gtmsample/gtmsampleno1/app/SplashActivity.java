@@ -32,7 +32,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SplashActivity extends Activity {
     private static final long TIMEOUT_FOR_CONTAINER_OPEN_MILLISECONDS = 2000;
-    private static final String CONTAINER_ID = "GTM-KMZHPV";
+    private static final String CONTAINER_ID = "GTM-T95QDK";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
